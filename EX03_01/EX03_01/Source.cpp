@@ -17,10 +17,12 @@ public:
 		return radius;
 	}
 	string GetOn(){
-		if (on = false)
-			return "This fan is not on.";
-		else
-			return "This fan is on.";
+		if (on == false){
+			return ("This fan is not on.");
+		}
+		else{
+			return ("This fan is on.");
+		}
 	}
 
 	void SetSpeed(int newspeed){
