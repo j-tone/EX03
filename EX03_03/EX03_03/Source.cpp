@@ -1,33 +1,6 @@
 #include <iostream>
-
+#include "EvenNumber.h"
 using namespace std;
-
-class EvenNumber{
-public:
-	EvenNumber(){
-		value = 0;
-	}
-	EvenNumber(int e){
-		if ((e % 2) == 0){
-			value = e;
-		}
-		else
-			value = e + 1;
-	}
-
-private:
-	int value;
-public:
-	int GetValue(){
-		return value;
-	}
-	int GetNext(){
-		return (value + 2);
-	}
-	int GetPrevious(){
-		return (value - 2);
-	}
-};
 
 int main()
 {

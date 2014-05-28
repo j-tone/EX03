@@ -1,48 +1,7 @@
 #include <iostream>
 #include <string>
-
+#include "QuadraticEquation.h"
 using namespace std;
-
-class QuadraticEquation{
-public:
-	QuadraticEquation(int A, int B, int C){
-		a = A;
-		b = B;
-		c = C;
-	}
-	QuadraticEquation(){}
-
-private:
-	int a, b, c;
-public:
-	int GetA(){
-		return a;
-	}
-	int GetB(){
-		return b;
-	}
-	int GetC(){
-		return c;
-	}
-	int GetDiscriminant(){
-		return ((b*b) - (4 * (a*c)));
-	}
-
-	double GetRoot1(){
-		if (GetDiscriminant() >= 0){
-			return ((static_cast<double>(-b) + sqrt(GetDiscriminant())) / (2 * a));
-		}
-		else
-			return 0;
-	}
-	double GetRoot2(){
-		if (GetDiscriminant() >= 0){
-			return ((static_cast<double>(-b) - sqrt(GetDiscriminant())) / (2 * a));
-		}
-		else
-			return 0;
-	}
-};
 
 int main()
 {

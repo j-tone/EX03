@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7B0568C2-C734-49DA-BD7E-BD2FBCC4C0C5}</ProjectGuid>
+    <ProjectGuid>{D878058B-6B96-4990-9D89-53641CA6A0AB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>EX03_02</RootNamespace>
+    <RootNamespace>EX03_05</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,11 +76,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="QuadraticEquation.cpp" />
+    <ClCompile Include="MyInteger.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="QuadraticEquation.h" />
+    <ClInclude Include="MyInteger.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

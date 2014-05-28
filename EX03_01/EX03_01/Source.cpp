@@ -1,53 +1,7 @@
 #include <iostream>
 #include <string>
-
+#include "Fan.h"
 using namespace std;
-
-class Fan{
-private:
-	int speed;
-	double radius;
-	bool on;
-
-public:
-	int GetSpeed(){
-		return speed;
-	}
-	double GetRadius(){
-		return radius;
-	}
-	string GetOn(){
-		if (on == false){
-			return ("This fan is not on.");
-		}
-		else{
-			return ("This fan is on.");
-		}
-	}
-
-	void SetSpeed(int newspeed){
-		if (newspeed <= 0){
-			speed = 1;
-		}
-		else if (newspeed >= 3){
-			speed = 3;
-		}
-		else
-			speed = newspeed;
-	}
-	void SetRadius(double newradius){
-		radius = ((newradius >= 0) ? newradius : 0);
-	}
-	void SetOn(bool power){
-		on = power;
-	}
-
-	Fan(){
-		speed = 1;
-		on = false;
-		radius = 5;
-	}
-};
 
 int main()
 {
